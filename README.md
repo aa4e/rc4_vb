@@ -5,7 +5,7 @@
 
 - Encoder example (`VB.NET`):
 
-```
+```vbnet
 Dim key As Byte() = Text.Encoding.UTF8.GetBytes("mySecretKey")
 Dim rc As New Rc4(key)
 Dim msgBytes As Byte() = Text.Encoding.ASCII.GetBytes(msg)
@@ -14,7 +14,7 @@ Dim cipherText As Byte() = rc.Encode(msgBytes)
 
 - Decoder example (`VB.NET`):
 
-```
+```vbnet
 Dim key As Byte() = Text.Encoding.UTF8.GetBytes("mySecretKey")
 Dim rc As New Rc4(key)
 Dim decip As Byte() = rc.Decode(cipherText)
